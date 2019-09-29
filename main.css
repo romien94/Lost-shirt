@@ -1,0 +1,213 @@
+@import url(css/normalize.css);
+html,
+body {
+  height: 100%; }
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  color: #212121; }
+
+.logo-img {
+  width: 150px;
+  height: 119px; }
+
+.wrapper {
+  min-width: 1310px;
+  overflow: hidden; }
+
+.container {
+  width: 1290px;
+  margin: 0 auto; }
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 29px; }
+
+.mail {
+  text-align: center; }
+
+.mail__text {
+  padding: 0;
+  margin: 0;
+  line-height: 1.4; }
+
+.mail__link {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: inherit;
+  color: #ffbc2f;
+  text-decoration: none;
+  display: inline-block;
+  padding: 9px 0;
+  background-color: #212121;
+  width: 100%; }
+
+.hero {
+  height: 100vh;
+  min-height: 650px;
+  background: url("images/hero/background.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative; }
+
+.fade-slider {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1140px;
+  height: 70%;
+  transform: translate(-50%, -50%); }
+
+.fade-slider__list {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0; }
+
+.fade-slider__item {
+  list-style: none;
+  position: absolute;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s; }
+
+.fade-slider__text {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  font-family: "Alegreya Sans SC", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 63px;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase; }
+
+.fade-slider__word {
+  background-color: #212121;
+  padding: 5px 15px 8px;
+  margin-top: -7px; }
+
+.fade-slider__item--tshirts .fade-slider__word:nth-child(2n) {
+  margin-left: 12px; }
+
+.fade-slider__word--white {
+  color: white; }
+
+.fade-slider__word--yellow {
+  color: #ffbc2f; }
+
+.fade-slider__item--tshirts {
+  background-image: url("./images/hero/slider_pic_1.png"); }
+
+.fade-slider__item--tshirts .fade-slider__text {
+  align-items: flex-start;
+  top: 31%;
+  left: 0; }
+
+.fade-slider__item--games {
+  background-image: url("./images/hero/slider_pic_2.png"); }
+
+.fade-slider__item--games .fade-slider__text {
+  align-items: center;
+  bottom: 0;
+  transform: translateX(25%); }
+
+.fade-slider__item--presents {
+  background-image: url("./images/hero/slider_pic_3.png");
+  background-size: contain; }
+
+.fade-slider__item--presents .fade-slider__text {
+  align-items: center;
+  left: 0;
+  bottom: 20%; }
+
+.fade-slider__item--presents .fade-slider__word:first-child {
+  font-size: 90px; }
+
+.fade-slider__item--active {
+  opacity: 1; }
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75px;
+  height: 100%;
+  background-color: #212121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: width 0.3s; }
+
+.sidebar__header {
+  display: none; }
+
+.side-menu {
+  position: absolute;
+  left: -400px; }
+
+.sidebar__hamburger {
+  display: block;
+  position: absolute;
+  top: 27px; }
+
+.sidebar--open {
+  width: 324px; }
+
+.sidebar--open .sidebar__hamburger {
+  display: none; }
+
+.sidebar--open .sidebar__header {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 27px;
+  width: 100%; }
+
+.sidebar__close {
+  position: absolute;
+  top: 0;
+  right: 30px; }
+
+.sidebar--open .side-menu {
+  animation-name: move;
+  animation-duration: 1s;
+  width: 100%;
+  left: 0; }
+
+@keyframes move {
+  from {
+    left: -400px; }
+  to {
+    left: 0; } }
+.side-menu__list {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  list-style: none; }
+
+.side-menu__item {
+  margin-bottom: 20px; }
+
+.side-menu__link {
+  font-family: "Yanone Kaffeesatz", Arial, sans-serif;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #ffbc2f; }
+
+.side-menu__link:hover {
+  color: #d82727; }
+
+/*# sourceMappingURL=main.css.map */
