@@ -5,10 +5,12 @@ $yanone: 'Yanone Kaffeesatz', Arial, sans-serif;
 $lightblack: #212121;
 $yellow: #ffbc2f;
 $red: #d82727;
+$white: #fcf5e6;
 
 html,
 body {
   height: 100%;
+  background-color: $white;
 }
 
 body {
@@ -68,6 +70,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  margin-bottom: 130px;
 }
 
 .fade-slider {
@@ -258,4 +261,156 @@ body {
 
 .side-menu__link:hover {
   color: $red;
+}
+
+.filters {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 103px;
+}
+
+.filters__link {
+  display: block;
+  padding: 7px 23px;
+  color: $lightblack;
+  font-family: $yanone;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-right: 27px;
+}
+
+.filters__link:hover {
+  color: $red;
+}
+
+.filters__item--active .filters__link {
+  background-color: $lightblack;
+  color: $yellow;
+}
+
+.products {
+  margin-bottom: 186px;
+}
+
+.products__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -28px;
+  align-items: stretch;
+}
+
+.products__item {
+  position: relative;
+  width: 302px;
+  height: 386px;
+  background-color: $yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 28px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.products__item--big {
+  width: 630px;
+  height: 544px;
+}
+
+.products__item--big .products__price {
+  background-color: $yellow;
+  color: $lightblack;
+}
+
+.products__item--black {
+  background-color: $lightblack;
+}
+
+.products__price {
+  position: absolute;
+  top: 20px;
+  left: -15px;
+  display: inline-block;
+  font-family: $yanone;
+  font-weight: bold;
+  font-size: 30px;
+  color: $white;
+  background-color: $lightblack;
+  padding: 11px 14px 11px 31px;
+}
+
+.products__description {
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -200px;
+  text-align: center;
+  background-color: rgba(#232323,.8);
+  padding: 20px 35px 23px 35px;
+  box-sizing: border-box;
+}
+
+.products__description-text {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+.products__item:hover .products__description {
+  transition: .3s;
+  bottom: 0;
+}
+
+.products__description-text {
+  color: $white;
+}
+
+.products__image {
+  max-width: 90%;
+  max-height: 100%;
+  align-self: center;
+}
+
+.button {
+  font-family: $yanone;
+  font-weight: normal;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: $yellow;
+  text-decoration: none;
+  padding: 8px 29px;
+  background-color: $lightblack;
+}
+
+.button:hover {
+  color: white;
+  background-color: $red;
+}
+
+.collections .container {
+  display: flex;
+}
+
+.collections__item {
+  width: 671px;
+  height: 473px;
+  margin-right: 29px;
+  background-image: url("images/collections/pattern.png");
+  background-position: center center;
+  background-size: 100%;
+}
+
+.collections__item:before {
+  display: block;
+  width: 44%;
+  background-image: url("images/collections/collection_man.png");
 }
